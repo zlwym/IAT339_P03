@@ -246,3 +246,33 @@ Used https://www.youtube.com/watch?v=GDh9uToZkYg as a resource
     scale: 1.2;
     
 }
+
+/*
+Styling for numbered lists
+Used https://css-tricks.com/style-list-markers-css/ as a resource
+*/
+ol {
+    font-family: "neue-haas-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 0.9rem;
+    color: white;
+    list-style: none;
+    counter-reset: myCounter;
+}
+
+li {
+  counter-increment: myCounter;
+  margin: 0.25rem;
+}
+
+li::before {
+  font-family: "neue-haas-grotesk", sans-serif;
+  font-weight: 700;
+  content: counter(myCounter);
+  line-height: 2rem;
+  color: #666666;
+  text-align: center;
+  margin-right: 0.5rem;
+}
