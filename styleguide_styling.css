@@ -3,6 +3,10 @@ body {
     background-color: #121212;
 }
 
+section {
+    margin: 3rem;
+}
+
 .website-nav {
     position: relative;
     display: flex;
@@ -21,15 +25,9 @@ body {
     padding-right: 1rem;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-right: 5rem;
-    padding-left: 5rem;
+code {
+    background-color: #454545;
+    color: white;
 }
 
 h1 {
@@ -56,6 +54,15 @@ h3 {
     font-weight: 600;
     font-style: normal;
     font-size: 1.5rem;
+    color: white; 
+}
+
+h4 {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    text-transform: uppercase;
     color: white;
 }
 
@@ -79,50 +86,22 @@ a:active {
     text-decoration: underline;
 }
 
-.img-container {
-    width: 50rem;
-    height: 30rem;
-    overflow: hidden;
-    border-radius: 2rem;
-    margin-bottom: 10rem;
+.button-nav {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 500; 
+    font-style: normal;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: #2e2e2e;
+    padding: 1rem;
+    border-radius: 7px;
+    transition: 0.1s ease-in-out;
 }
 
-.img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center; 
-    transition: 0.15s ease-in-out;
+.button-nav:hover,
+.button-nav:focus,
+.button-nav:active {
+    text-decoration: none;
+    background-color: #666666;
 }
-
-.img-container img:hover,
-.img-container img:focus,
-.img-container img:active {
-    scale: 1.2;
-    
-}
-
-.title-text {
-    max-width: 38rem;
-}
-
-.body-text {
-    max-width: 31rem;
-}
-
-/*
-for Neue Haas Grotesk Display Pro 55 Roman
-font-family: "neue-haas-grotesk-display", sans-serif;
-font-weight: 500;
-font-style: normal;
-
-For Neue Haas Grotesk Display Pro 65 Medium
-font-family: "neue-haas-grotesk-display", sans-serif;
-font-weight: 600;
-font-style: normal;
-
-For Neue Haas Grotesk Text Pro 55 Roman
-font-family: "neue-haas-grotesk-text", sans-serif;
-font-weight: 400;
-font-style: normal;
-*/

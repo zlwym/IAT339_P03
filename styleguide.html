@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/gjd0xcn.css">
     <title>Zoe Mann</title>
 
-    <link href="main.css" rel="stylesheet">
+    <link href="styleguide_styling.css" rel="stylesheet">
 
 </head>
 
@@ -27,18 +27,205 @@
         
     </header>
 
-    <section>
-        <h3 class="body-text">Technology-obsessed designer, researcher, and programmer voted most talkative and most likely to be found in the outdoors.</h3>
+    
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
 
-        <p class="body-text">Originally from the world of health sciences, I study interactive arts and technology at Simon Fraser University and previously at Queensland University of Technology. My journey from the sciences to design and technology have instilled in me a passion for accessibility, sustainability, and inclusion and equity. 
-        </p>
 
-        <p class="body-text">My data and evidence driven work is influenced by my love of research and curiosity about the world. As a senior student, I love collaborating with diverse stakeholders, learning from a variety of perspectives, and teaching junior interactive arts and technology students. 
-        </p>
+      <section class="element">
+        <h2>Interactive Elements</h2>
+        <h3>In-text link</h3>
+        <!-- An in text link to the Wikipedia page about dogs. Used IAT 339 Week 1 example as a resource. -->
+        <h4>CSS selector:</h4>
+        <p>.in-text-link</p>
+        <h4>Sample code:</h4>
+        <code>&lt;p>Link to &lt;a href = "https://en.wikipedia.org/wiki/Dog">dogs&lt;/a>!&lt;/p></code>
+        <h4>Rendered element:</h4>
+        <p>Link to <a class="in-text-link" href = "https://en.wikipedia.org/wiki/Dog">DOGS</a>!</p>
+      </section>
 
-        <p class="body-text">
-        From strategizing disease prevention and striving for a perfect titration, I now obsess over pixel-perfect placement and dissecting data. When I’m not designing, programming, or researching, you can find me discovering new music, hiking through the mountains, or making a mess with paint.</p>
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <!-- A text input field with a label. Used IAT 339 Week 1 example as a resource. -->
+         <h4>CSS selector:</h4>
+         <p>.input-field</p>
+
+         <h4>Sample code:</h4>
+         <code>&lt;label for="form-input-field">Label&lt;/label>
+          &ltinput type="text" placeholder="input"
+          id="form-input-field"></code>
+
+          <h4>Rendered element:</h4>
+          
+          
+          <fieldset class="input-field">
+          <form>
+            <label>Label
+              <input type="text" name="input">
+            </label>
+            </fieldset>
+          </form>
+
+        </form>
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <!-- An image that takes user to Wikipedia page about shih tsus when clicked. Used IAT 339 Week 1 example and https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image as resources. -->
+         <h4>CSS selector:</h4>
+         <p>.image-link</p>
+
+         <h4>Sample code:</h4>
+         <code>&lt;a href="https://en.wikipedia.org/wiki/Shih_Tzu">
+          &lt;img src="img/Shih-Tzu-On-White-01.avif" alt="shih tzu dog">
+        &lt;/a></code>
+
+        <h4>Rendered element:</h4>
+        <p></p>
+        <p>click the image below to learn about shih tzus.</p>
+        <a href="https://en.wikipedia.org/wiki/Shih_Tzu">
+          <img class="image-link" src="img/Shih-Tzu-On-White-01.avif" alt="shih tzu dog">
+        </a>
+      </section>
+
+
     </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <!-- Four levels of headings. Used IAT 339 Week 1 example as a resource. -->
+
+      <section class="element">
+        <h2>Text Elements</h2>
+      <h3>Headings</h3>
+
+       <h4>CSS selector:</h4>
+       <p>N/A</p>
+       <h4>Sample code:</h4>
+       <code>&lt;h1>Heading 1&lt;/h1></code>
+       <h4>Rendered element:</h4>
+        <h1>Heading 1</h1>
+
+       <h4>CSS selector:</h4>
+       <p>h2</p>
+       <h4>Sample code:</h4>
+       <code>&lt;h2>Heading 2&lt;/h2></code>
+       <h4>Rendered element:</h4>
+      <h2>Heading 2</h2>
+
+      <h4>CSS selector:</h4>
+       <p>h3</p>
+       <h4>Sample code:</h4>
+       <code>&lt;h3>Heading 3&lt;/h3></code>
+       <h4>Rendered element:</h4>
+       <h3>Heading 3</h3>
+
+       <h4>CSS selector:</h4>
+       <p>h4</p>
+       <h4>Sample code:</h4>
+       <code>&lt;h4>Heading 4&lt;/h4></code>
+       <h4>Rendered element:</h4>
+        <h4>Heading 4</h4>
+      </section>
+
+      <section class="element">
+        <!-- Paragraph written by me. Used IAT 339 Week 1 example as a resource. -->
+
+          <h3>Paragraphs</h3>
+
+         <h4>CSS Selector:</h4>
+         <p>p</p>
+         
+         <h4>Sample code:</h4>
+         <code>&lt;p>This is a paragraph about dogs. Dogs are a popular pet, earning them the title "man's best friend". I have a dog and many of my friends and family have dogs. They come in a variety of breeds, colours, and sizes. Each type of dog has unique characteristics, such as heightened sense of smell or good stamina. Dogs have been a notable animal since early human history, appearing in ancient hieroglyphics and art pieces.&lt;/p></code>
+
+         <h4>Rendered element:</h4>
+        <p>This is a paragraph about dogs. Dogs are a popular pet, earning them the title "man's best friend". I have a dog and many of my friends and family have dogs. They come in a variety of breeds, colours, and sizes. Each type of dog has unique characteristics, such as heightened sense of smell or good stamina. Dogs have been a notable animal since early human history, appearing in ancient hieroglyphics and art pieces.</p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section class="element">
+        <h2>Combined Elements</h2>
+        <h3>Main Navigation</h3>
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+    <section id="citations">
+        <section>
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+      </ul>
+      </section>
+
+    </section>
+
 
 </body>
 </html>
+
+
