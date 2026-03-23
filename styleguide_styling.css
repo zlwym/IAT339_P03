@@ -16,6 +16,16 @@ section {
     padding-left: 1rem;
 }
 
+.website-nav:nth-child(3) {
+    position: relative;
+    display: flex;
+    background-color: #161740;
+    align-items: center;
+    border-bottom: 1px solid #292a63;
+    border-top: 1px solid #292a63;
+    padding-left: 1rem;
+}
+
 .menu {
     position: absolute;
     display: flex;
@@ -125,7 +135,7 @@ input[type=reset]:hover,
 input[type=reset]:focus, 
 input[type=reset]:active{
   cursor: pointer;
-  background-color: rgb(200, 200, 200);
+  background-color: #EBEBF2;
   color: #161740;
 }
 
