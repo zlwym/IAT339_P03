@@ -64,6 +64,18 @@
 
       <section class="element">
         <h3>Submit/Reset Buttons</h3>
+        
+        <h4>CSS selector:</h4>
+        <p>input[type=submit]</p>
+        <p>input[type=reset]</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input type="submit" name="submit" value="submit"></code>
+        <code>&lt;input type="reset" name="reset" value="reset"></code>
+
+        <h4>Rendered element:</h4>
+        <input type="submit" name="submit" value="submit">
+        <input type="reset" name="reset" value="reset">
       </section>
 
 
@@ -96,27 +108,48 @@
 
       <section class="element">
         <h3>Radio Button with Label</h3>
+        <h4>CSS selector:</h4>
+        <p>.radio</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input class="radio-input" type="radio" name="button" value="sandra" id="button1">
+          &lt;label class="radio-label" for="button1">Sandra&lt;/label></code>
+
+        <h4>Rendered element:</h4>
+        <div class="radio">
+          <input class="radio-input" type="radio" name="button" value="one" id="button1">
+          <label class="radio-label" for="button1">ONE</label>
+          
+          <input class="radio-input" type="radio" name="button" value="two" id="button2" >
+          <label class="radio-label" for="button2">TWO</label>
+
+          <input class="radio-input" type="radio" name="button" value="three" id="button3">
+          <label class="radio-label" for="button3">THREE</label>
+        </div>
       </section>
 
 
       <section class="element">
         <h3>Image as a Link</h3>
 
-        <!-- An image that takes user to Wikipedia page about shih tsus when clicked. Used IAT 339 Week 1 example and https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image as resources. -->
+        <!-- Used IAT 339 Week 1 example as a resource. -->
          <h4>CSS selector:</h4>
-         <p>.image-link</p>
+         <p>.img-container</p>
 
          <h4>Sample code:</h4>
-         <code>&lt;a href="https://en.wikipedia.org/wiki/Shih_Tzu">
-          &lt;img src="img/Shih-Tzu-On-White-01.avif" alt="shih tzu dog">
-        &lt;/a></code>
+         <code>&lt;div class="img-container">
+        &lt;a href="mosaic.html">
+          &lt;img class="image-link" src="img/mosaic_spash_screen_green.png" alt="mosaic">
+        &lt;/a>
+        &lt;/div></code>
 
         <h4>Rendered element:</h4>
         <p></p>
-        <p>click the image below to learn about shih tzus.</p>
-        <a href="https://en.wikipedia.org/wiki/Shih_Tzu">
-          <img class="image-link" src="img/Shih-Tzu-On-White-01.avif" alt="shih tzu dog">
+        <div class="img-container">
+        <a href="mosaic.html">
+          <img class="image-link" src="img/mosaic_spash_screen_green.png" alt="mosaic">
         </a>
+        </div>
       </section>
 
 
@@ -135,7 +168,7 @@
       <h3>Headings</h3>
 
        <h4>CSS selector:</h4>
-       <p>N/A</p>
+       <p>h1</p>
        <h4>Sample code:</h4>
        <code>&lt;h1>Heading 1&lt;/h1></code>
        <h4>Rendered element:</h4>
@@ -193,19 +226,19 @@
       <section class="element">
         <h2>Combined Elements</h2>
         <h3>Main Navigation</h3>
+
+        <div class="website-nav">
+            <h2><a href="index.html">Home</a></h2>
+
+            <div class="menu">
+                <h2><a href="about.html">About</a></h2>
+                <h2><a href="#">Contact</a></h2>
+                <h2><a href="#">Resume</a></h2>
+                <h2><a href="styleguide.html">Style Guide</a></h2>
+            </div>
+        </div>
       </section>
 
-      <section class="element">
-        <h3>Product/Service Listing</h3>
-      </section>
-
-      <section class="element">
-        <h3>Payment Form</h3>
-      </section>
-
-      <section class="element">
-        <h3>Checkout Cart</h3>
-      </section>
 
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->

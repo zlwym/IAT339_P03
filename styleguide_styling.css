@@ -73,6 +73,7 @@ p {
     text-align: left;
     font-size: 0.9rem;
     color: white;
+    max-width: 50rem;
 }
 
 a {
@@ -104,4 +105,144 @@ a:active {
 .button-nav:active {
     text-decoration: none;
     background-color: #666666;
+}
+
+/* Styling for submit and reset buttons */
+
+input[type=submit],
+input[type=reset] {
+  border-radius: 7px;
+  padding: 1rem;
+  font-family: "neue-haas-grotesk", sans-serif;
+  text-transform: uppercase;
+  border: none;
+  background-color: #666666;
+  color: white;
+  transition: 0.1s ease-in-out;
+}
+
+input[type=submit]:hover, 
+input[type=submit]:focus 
+input[type=submit]:active,
+input[type=reset]:hover, 
+input[type=reset]:focus, 
+input[type=reset]:active{
+  cursor: pointer;
+  background-color: rgb(200, 200, 200);
+  color: #121212;
+}
+
+/*
+Styling for text input field and label
+*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+form {
+
+  color: white;
+  border-radius: 7px;
+  font-family: "neue-haas-grotesk", sans-serif;
+  font-variation-settings: "wght" 800;
+  width: 100%;
+  max-width: 25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.input-field input {
+  border-radius: 7px;
+  font-family: "neue-haas-grotesk", sans-serif;
+  color: white;
+  background: #121212;
+  border: 1px solid #666666;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+  padding: 7px;
+  margin-top: 7px;
+  width: 100%;
+}
+
+.input-field label {
+  display: block;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.input-field input:hover, .input-field input:focus{
+  background: #2e2e2e;
+}
+
+
+/*
+Styling for radio buttons
+Used https://www.youtube.com/watch?v=GDh9uToZkYg as a resource
+*/
+.radio {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 5px;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.radio-input{
+  display: none;
+}
+
+.radio-label{
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 500; 
+  font-style: normal;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #FFF;
+  background: #2e2e2e;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.radio-label:not(:last-of-type){
+  border-right: 1px solid #121212;
+}
+
+.radio-input:checked + .radio-label{
+  background: #666666;
+}
+
+/* Image as a link styling */
+
+.img-container {
+    width: 50rem;
+    height: 30rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin-bottom: 10rem;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
+    transition: 0.15s ease-in-out;
+}
+
+.img-container img:hover,
+.img-container img:focus,
+.img-container img:active {
+    scale: 1.2;
+    
 }
