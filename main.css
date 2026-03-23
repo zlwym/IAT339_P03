@@ -1,13 +1,21 @@
 body {
     margin: 0;
+    background-color: #121212;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .website-nav {
     position: relative;
     display: flex;
-    background-color: white;
+    background-color: #121212;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #2e2e2e;
     padding-left: 1rem;
 }
 
@@ -20,11 +28,30 @@ body {
     padding-right: 1rem;
 }
 
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 45rem;
+    padding: 5rem;
+}
+
 h1 {
     font-family: "neue-haas-grotesk-display",
     sans-serif;
     font-weight: 600;
     font-style: normal;
+    font-size: 2.4rem;
+    margin: 0;
+    color: white;
 }
 
 h2 {
@@ -33,16 +60,28 @@ h2 {
     font-style: normal;
     font-size: 0.85rem;
     text-transform: uppercase;
+    color: white;
+}
+
+h3 {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
 }
 
 p {
     font-family: "neue-haas-grotesk-text", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-align: left;
+    font-size: 0.9rem;
+    color: white;
 }
 
 a {
-    color: black;
+    color: #707070;
     text-decoration: none;
 }
 
@@ -52,24 +91,46 @@ a:active {
     text-decoration: underline;
 }
 
-.img-container {
+.img-container,
+.img-container-link {
     width: 50rem;
     height: 30rem;
     overflow: hidden;
     border-radius: 2rem;
+    margin-bottom: 5rem;
 }
 
-.img-container img {
+.img-container img,
+.img-container-link img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center; 
+    transition: 0.15s ease-in-out;
 }
 
-.img-container:hover,
-.img-container:focus,
-.img-container:active {
-    opacity: 70%;
+.img-container-link img:hover,
+.img-container-link img:focus,
+.img-container-link img:active {
+    scale: 1.2;
+    
+}
+
+.img-container img:nth-child(1) {
+    scale: 1.1;
+}
+
+.title-text {
+    max-width: 38rem;
+}
+
+.title-para {
+    text-align: center;
+    max-width: 18rem;
+}
+
+.body-text {
+    max-width: 31rem;
 }
 
 /*

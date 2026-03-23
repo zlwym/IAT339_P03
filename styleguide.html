@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/gjd0xcn.css">
+    <title>Zoe Mann</title>
+
+    <link href="styleguide_styling.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+        <div class="website-nav">
+            <h2><a href="index.html">Home</a></h2>
+
+            <div class="menu">
+                <h2><a href="about.html">About</a></h2>
+                <h2><a href="#">Contact</a></h2>
+                <h2><a href="#">Resume</a></h2>
+                <h2><a href="styleguide.html">Style Guide</a></h2>
+            </div>
+        </div>
+        
+    </header>
+
+    
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+
+      <section class="element">
+        <h2>Interactive Elements</h2>
+        <h3>In-text link</h3>
+        <!-- An in text link to the Wikipedia page about dogs. Used IAT 339 Week 1 example as a resource. -->
+        <h4>CSS selector:</h4>
+        <p>.in-text-link</p>
+        <h4>Sample code:</h4>
+        <code>&lt;p>Link to &lt;a href = "https://en.wikipedia.org/wiki/Dog">dogs&lt;/a>!&lt;/p></code>
+        <h4>Rendered element:</h4>
+        <p>Link to <a class="in-text-link" href = "https://en.wikipedia.org/wiki/Dog">DOGS</a>!</p>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        
+        <h4>CSS selector:</h4>
+        <p>input[type=submit]</p>
+        <p>input[type=reset]</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input type="submit" name="submit" value="submit"></code>
+        <code>&lt;input type="reset" name="reset" value="reset"></code>
+
+        <h4>Rendered element:</h4>
+        <input type="submit" name="submit" value="submit">
+        <input type="reset" name="reset" value="reset">
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <!-- A text input field with a label. Used IAT 339 Week 1 example as a resource. -->
+         <h4>CSS selector:</h4>
+         <p>.input-field</p>
+
+         <h4>Sample code:</h4>
+         <code>&lt;label for="form-input-field">Label&lt;/label>
+          &ltinput type="text" placeholder="input"
+          id="form-input-field"></code>
+
+          <h4>Rendered element:</h4>
+          
+          
+          <fieldset class="input-field">
+          <form>
+            <label>Label
+              <input type="text" name="input">
+            </label>
+            </fieldset>
+          </form>
+
+        </form>
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <h4>CSS selector:</h4>
+        <p>.radio</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input class="radio-input" type="radio" name="button" value="sandra" id="button1">
+          &lt;label class="radio-label" for="button1">Sandra&lt;/label></code>
+
+        <h4>Rendered element:</h4>
+        <div class="radio">
+          <input class="radio-input" type="radio" name="button" value="one" id="button1">
+          <label class="radio-label" for="button1">ONE</label>
+          
+          <input class="radio-input" type="radio" name="button" value="two" id="button2" >
+          <label class="radio-label" for="button2">TWO</label>
+
+          <input class="radio-input" type="radio" name="button" value="three" id="button3">
+          <label class="radio-label" for="button3">THREE</label>
+        </div>
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <!-- Used IAT 339 Week 1 example as a resource. -->
+         <h4>CSS selector:</h4>
+         <p>.img-container</p>
+
+         <h4>Sample code:</h4>
+         <code>&lt;div class="img-container">
+        &lt;a href="mosaic.html">
+          &lt;img class="image-link" src="img/mosaic_spash_screen_green.png" alt="mosaic">
+        &lt;/a>
+        &lt;/div></code>
+
+        <h4>Rendered element:</h4>
+        <p></p>
+        <div class="img-container">
+        <a href="mosaic.html">
+          <img class="image-link" src="img/mosaic_spash_screen_green.png" alt="mosaic">
+        </a>
+        </div>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <!-- Four levels of headings. Used IAT 339 Week 1 example as a resource. -->
+
+      <section class="element">
+        <h2>Text Elements</h2>
+      <h3>Headings</h3>
+
+       <h4>CSS selector:</h4>
+       <p>h1</p>
+       <h4>Sample code:</h4>
+       <code>&lt;h1>Heading 1&lt;/h1></code>
+       <h4>Rendered element:</h4>
+        <h1>Heading 1</h1>
+
+       <h4>CSS selector:</h4>
+       <p>h2</p>
+       <h4>Sample code:</h4>
+       <code>&lt;h2>Heading 2&lt;/h2></code>
+       <h4>Rendered element:</h4>
+      <h2>Heading 2</h2>
+
+      <h4>CSS selector:</h4>
+       <p>h3</p>
+       <h4>Sample code:</h4>
+       <code>&lt;h3>Heading 3&lt;/h3></code>
+       <h4>Rendered element:</h4>
+       <h3>Heading 3</h3>
+
+       <h4>CSS selector:</h4>
+       <p>h4</p>
+       <h4>Sample code:</h4>
+       <code>&lt;h4>Heading 4&lt;/h4></code>
+       <h4>Rendered element:</h4>
+        <h4>Heading 4</h4>
+      </section>
+
+      <section class="element">
+        <!-- Paragraph written by me. Used IAT 339 Week 1 example as a resource. -->
+
+          <h3>Paragraphs</h3>
+
+         <h4>CSS Selector:</h4>
+         <p>p</p>
+         
+         <h4>Sample code:</h4>
+         <code>&lt;p>This is a paragraph about dogs. Dogs are a popular pet, earning them the title "man's best friend". I have a dog and many of my friends and family have dogs. They come in a variety of breeds, colours, and sizes. Each type of dog has unique characteristics, such as heightened sense of smell or good stamina. Dogs have been a notable animal since early human history, appearing in ancient hieroglyphics and art pieces.&lt;/p></code>
+
+         <h4>Rendered element:</h4>
+        <p>This is a paragraph about dogs. Dogs are a popular pet, earning them the title "man's best friend". I have a dog and many of my friends and family have dogs. They come in a variety of breeds, colours, and sizes. Each type of dog has unique characteristics, such as heightened sense of smell or good stamina. Dogs have been a notable animal since early human history, appearing in ancient hieroglyphics and art pieces.</p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <h4>CSS selector:</h4>
+          <p>ol, li</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;ol>
+          &lt;li>One&lt;/li>
+          &lt;li>Two&lt;/li>
+          &lt;li>Three&lt;/li>
+        </ol></code>
+       
+        <h4>Rendered element:</h4>
+        <ol>
+          <li>One</li>
+          <li>Two</li>
+          <li>Three</li>
+        </ol>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section class="element">
+        <h2>Combined Elements</h2>
+        <h3>Main Navigation</h3>
+
+        <div class="website-nav">
+            <h2><a href="index.html">Home</a></h2>
+
+            <div class="menu">
+                <h2><a href="about.html">About</a></h2>
+                <h2><a href="#">Contact</a></h2>
+                <h2><a href="#">Resume</a></h2>
+                <h2><a href="styleguide.html">Style Guide</a></h2>
+            </div>
+        </div>
+      </section>
+
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+    <section id="citations">
+        <section>
+      <h2>Citations</h2>
+
+      <ol>
+        <li>Schwartz, Christian. Designer. n.d. <strong>Neue Haas Grotesk [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/neue-haas-grotesk">https://fonts.adobe.com/fonts/neue-haas-grotesk</a></li>
+    
+        </ol>
+      
+      </section>
+
+    </section>
+
+
+</body>
+</html>
+
+
