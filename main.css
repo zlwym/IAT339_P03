@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #121212;
+    background-color: #161740;
 }
 
 .container {
@@ -13,9 +13,9 @@ body {
 .website-nav {
     position: relative;
     display: flex;
-    background-color: #121212;
+    background-color: #161740;
     align-items: center;
-    border-bottom: 1px solid #2e2e2e;
+    border-bottom: 1px solid #292a63;
     padding-left: 1rem;
 }
 
@@ -51,7 +51,7 @@ h1 {
     font-style: normal;
     font-size: 2.4rem;
     margin: 0;
-    color: white;
+    color: #EBEBF2;
 }
 
 h2 {
@@ -60,7 +60,7 @@ h2 {
     font-style: normal;
     font-size: 0.85rem;
     text-transform: uppercase;
-    color: white;
+    color: #EBEBF2;
 }
 
 h3 {
@@ -68,7 +68,7 @@ h3 {
     font-weight: 600;
     font-style: normal;
     font-size: 1.5rem;
-    color: white;
+    color: #EBEBF2;
 }
 
 p {
@@ -77,18 +77,20 @@ p {
     font-style: normal;
     text-align: left;
     font-size: 0.9rem;
-    color: white;
+    color: #EBEBF2;
 }
 
 a {
-    color: #707070;
+    color: #6a6bb0;
     text-decoration: none;
+    transition: 0.1s ease-in-out;
 }
 
 a:hover, 
 a:focus,
 a:active {
     text-decoration: underline;
+    color: #EBEBF2;
 }
 
 .img-container,
