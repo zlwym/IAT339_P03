@@ -116,6 +116,10 @@ a:active {
     
 }
 
+.img-container img:nth-child(1) {
+    scale: 1.2;
+}
+
 .title-text {
     max-width: 38rem;
 }
