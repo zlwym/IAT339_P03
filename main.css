@@ -95,8 +95,8 @@ a:active {
 
 .img-container,
 .img-container-link {
-    width: 60vw;
-    height: 40vw;
+    max-width: 50rem;
+    max-height: 30rem;
     overflow: hidden;
     border-radius: 2rem;
     margin-bottom: 5rem;
@@ -138,4 +138,23 @@ a:active {
 .star {
     width: 4rem;
     height: 4rem;
+}
+
+/* Project Page Styling */
+
+.context {
+    display: flex;
+    gap: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.context-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.context-item p{
+    margin: 0;
+    padding: 0;
 }
