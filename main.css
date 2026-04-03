@@ -160,7 +160,7 @@ a:active {
     padding: 0;
 }
 
-.objective {
+.blue-text-box {
     text-align: center;
     max-width: 25rem;
     background-color: #292a63;
@@ -170,7 +170,7 @@ a:active {
     margin-bottom: 2rem;
 }
 
-.objective p {
+.blue-text-box p {
     text-align: center;
 }
 
@@ -186,3 +186,14 @@ a:active {
     max-width: 20rem;
     max-height: 13rem;
 }
+
+.diagram {
+    display: flex;
+    gap: 1rem;
+}
+
+.diagram .blue-text-box {
+    flex: 1;
+}
+
+/* need to make a wider container for components including images */
