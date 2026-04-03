@@ -33,7 +33,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 5rem;
+    padding: 2.5rem 5rem;
 }
 
 .text {
@@ -41,7 +41,7 @@ body {
     flex-direction: column;
     text-align: left;
     max-width: 45rem;
-    padding: 5rem;
+    padding: 2.5rem 5rem;
 }
 
 h1 {
@@ -99,7 +99,8 @@ a:active {
     max-height: 30rem;
     overflow: hidden;
     border-radius: 2rem;
-    margin-bottom: 5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .img-container img,
@@ -157,4 +158,31 @@ a:active {
 .context-item p{
     margin: 0;
     padding: 0;
+}
+
+.objective {
+    text-align: center;
+    max-width: 25rem;
+    background-color: #292a63;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.objective p {
+    text-align: center;
+}
+
+.image-with-caption {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.image-with-caption img{
+    max-width: 20rem;
+    max-height: 13rem;
 }
