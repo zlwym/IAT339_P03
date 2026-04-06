@@ -177,6 +177,7 @@ fieldset {
   padding: 7px;
   margin-top: 7px;
   width: 100%;
+  transition: 0.1s ease-in-out;
 }
 
 .input-field label {
@@ -186,7 +187,7 @@ fieldset {
 }
 
 .input-field input:hover, .input-field input:focus{
-  background: #292a63;
+  border: 1px solid #EBEBF2;
 }
 
 
