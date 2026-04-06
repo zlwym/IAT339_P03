@@ -221,7 +221,7 @@ fieldset {
   border: none;
 }
 
-.input-field input {
+.input-field input, textarea{
   border-radius: 7px;
   font-family: "neue-haas-grotesk", sans-serif;
   color: #EBEBF2;
@@ -246,6 +246,11 @@ textarea:hover, textarea:focus{
 
 ::placeholder {
     color: #4a4b8a;
+}
+
+textarea {
+    resize: vertical;
+    margin-left: 1rem;
 }
 
 
