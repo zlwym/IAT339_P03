@@ -3,6 +3,10 @@ body {
     background-color: #161740;
 }
 
+.body-dark {
+    background-color: white;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -272,4 +276,39 @@ input[type=submit]:active {
   color: #161740;
 }
 
+/* LIGHT DARK TOGGLE STUFF */
 
+.radio {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 5px;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.radio-input{
+  display: none;
+}
+
+.radio-label{
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 500; 
+  font-style: normal;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #EBEBF2;
+  background: #292a63;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.radio-label:not(:last-of-type){
+  border-right: 1px solid #161740;
+}
+
+.radio-input:checked + .radio-label{
+  background: #4a4b8a;
+}
