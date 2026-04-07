@@ -209,7 +209,7 @@ a:active {
 
 /* CONTACT FORM STUFF: MOVE THIS TO DIFFERENT FILE LATER */
 
-fieldset {
+.input-field {
   color: #EBEBF2;
   border-radius: 7px;
   font-family: "neue-haas-grotesk", sans-serif;
@@ -217,7 +217,6 @@ fieldset {
   width: 100%;
   max-width: 30rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
   border: none;
 }
 
@@ -250,7 +249,27 @@ textarea:hover, textarea:focus{
 
 textarea {
     resize: vertical;
-    margin-left: 1rem;
+}
+
+input[type=submit] {
+  border-radius: 7px;
+  padding: 1rem;
+  font-family: "neue-haas-grotesk", sans-serif;
+  text-transform: uppercase;
+  border: none;
+  background-color: #4a4b8a;
+  color: #EBEBF2;
+  transition: 0.1s ease-in-out;
+  max-width: 5.5rem;
+  margin-left: 20px;
+}
+
+input[type=submit]:hover, 
+input[type=submit]:focus 
+input[type=submit]:active {
+  cursor: pointer;
+  background-color: #EBEBF2;
+  color: #161740;
 }
 
 
