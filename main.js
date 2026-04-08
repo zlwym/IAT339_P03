@@ -34,13 +34,22 @@ window.addEventListener("DOMContentLoaded", function() {
     if(savedTheme === "light") {
         document.body.classList.add("body-light");
         navbar.classList.add("website-nav-light");
-        document.getElementById("star").src = "img/star_dark.svg";
+
+        const star = document.getElementById("star");
+        if(star) {
+            star.src = "img/star_dark.svg";
+        }
+        
         document.getElementById("light").checked = true;
     }
     else {
         document.body.classList.remove("body-light");
         navbar.classList.remove("website-nav-light");
-        document.getElementById("star").src = "img/star.svg";
+
+        if(star) {
+            star.src = "img/star.svg"
+        }
+        
         document.getElementById("dark").checked = true;
     }
 })
