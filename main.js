@@ -46,8 +46,9 @@ window.addEventListener("DOMContentLoaded", function() {
         document.body.classList.remove("body-light");
         navbar.classList.remove("website-nav-light");
 
+        const star = document.getElementById("star");
         if(star) {
-            star.src = "img/star.svg"
+            star.src = "img/star.svg";
         }
         
         document.getElementById("dark").checked = true;
