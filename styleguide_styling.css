@@ -35,6 +35,11 @@ section {
     padding-right: 1rem;
 }
 
+.footer {
+    border-top: 1px solid #292a63;
+    margin-top: 10rem;
+}
+
 h1 {
     font-family: "neue-haas-grotesk-display",
     sans-serif;
