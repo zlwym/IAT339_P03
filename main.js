@@ -6,28 +6,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const lightRadio = document.getElementById("light");
 const darkRadio = document.getElementById("dark");
-darkRadio.checked = true;
 
 lightRadio.addEventListener("change", function() {
-    if (this.checked) {
-        var element = document.body;
-        var navbar = document.querySelector(".website-nav");
-        
-        element.classList.toggle("body-light");
-        navbar.classList.toggle("website-nav-light");
+    if(this.checked) {
+        document.body.classList.add("body-light");
+        document.querySelector(".website-nav").classList.add("website-nav-light");
+        document.getElementById("star").src = "img/star_dark.svg";
 
-        darkRadio.checked = false;
+        localStorage.setItem("theme", "light");
     }
 })
 
 darkRadio.addEventListener("change", function() {
-    if (this.checked) {
-        var element = document.body;
-        var navbar = document.querySelector(".website-nav");
+    if(this.checked) {
+        document.body.classList.remove("body-light");
+        document.querySelector(".website-nav").classList.remove("website-nav-light");
+        document.getElementById("star").src = "img/star.svg";
 
-        element.classList.toggle("body-light");
-        navbar.classList.toggle("website-nav-light");
-
-        darkRadio.checked = true;
+        localStorage.setItem("theme", "dark");
     }
 })
+
+window.addEventListener("DOMContentLoaded", function() {
+    const savedTheme = localStorage.getItem("theme");
+    const navbar = document.querySelector(".website-nav");
+
+    if(savedTheme === "light") {
+        document.body.classList.add("body-light");
+        navbar.classList.add("website-nav-light");
+        document.getElementById("star").src = "img/star_dark.svg";
+        document.getElementById("light").checked = true;
+    }
+    else {
+        document.body.classList.remove("body-light");
+        navbar.classList.remove("website-nav-light");
+        document.getElementById("star").src = "img/star.svg";
+        document.getElementById("dark").checked = true;
+    }
+})
+
+// resources: https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
+// https://www.w3schools.com/jsref/prop_radio_checked.asp

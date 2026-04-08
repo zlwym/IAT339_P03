@@ -134,7 +134,7 @@ a:active {
     max-width: 31rem;
 }
 
-.star {
+#star {
     width: 4rem;
     height: 4rem;
     margin: 1rem;
@@ -200,7 +200,7 @@ a:active {
 
 /* ANIMATIONS: MOVE THIS TO DIFFERENT FILE LATER */
 
-.star:hover {
+#star:hover {
     transform: rotate(360deg);
 }
 
@@ -262,11 +262,13 @@ input[type=submit] {
 }
 
 input[type=submit]:hover, 
-input[type=submit]:focus 
+input[type=submit]:focus, 
 input[type=submit]:active {
   cursor: pointer;
   background-color: #EBEBF2;
   color: #161740;
+  border-radius: 12px;
+  border: none;
 }
 
 /* LIGHT DARK TOGGLE STUFF */
@@ -275,7 +277,6 @@ input[type=submit]:active {
   display: inline-flex;
   overflow: hidden;
   border-radius: 5px;
-
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -310,10 +311,50 @@ input[type=submit]:active {
 
 .body-light {
     background-color: white;
-    color: #161740;
+    color: #292a63;
 }
 
 .website-nav-light {
     background-color: white;
     border-bottom: 1px solid #4a4b8a;
+}
+
+body.body-light .input-field {
+  color: #292a63;
+}
+
+body.body-light .input-field input, body.body-light textarea{
+  color: #4a4b8a;
+  background: white;
+  border: 1px solid #4a4b8a;
+}
+
+body.body-light .input-field input:hover, 
+body.body-light .input-field input:focus,
+body.body-light textarea:hover, 
+body.body-light textarea:focus{
+  background-color: #EBEBF2;
+  border: 1px solid #4a4b8a;
+}
+
+body.body-light ::placeholder {
+    color: #BABAD4;
+}
+
+body.body-light input[type=submit] {
+  background-color: #4a4b8a;
+  color: #EBEBF2;
+}
+
+body.body-light input[type=submit]:hover, 
+body.body-light input[type=submit]:focus, 
+body.body-light input[type=submit]:active {
+  background-color: #292a63;
+  color: #EBEBF2;
+}
+
+body.body-light a:hover, 
+body.body-light a:focus,
+body.body-light a:active {
+    color: #161740;
 }
