@@ -51,7 +51,7 @@ body {
     flex-direction: column;
     text-align: left;
     max-width: 45rem;
-    padding: 2.5rem 5rem;
+    padding: 0rem 5rem;
 }
 
 h1 {
@@ -61,7 +61,6 @@ h1 {
     font-style: normal;
     font-size: 2.4rem;
     margin: 0;
-    padding-top: 5rem;
 }
 
 h2 {
@@ -132,6 +131,7 @@ a:active {
 
 .title-text {
     max-width: 38rem;
+    padding-top: 5rem;
 }
 
 .title-para {
@@ -177,6 +177,7 @@ a:active {
     border-radius: 1.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    align-content: center;
 }
 
 .blue-text-box p {
@@ -194,6 +195,7 @@ a:active {
 .image-with-caption img{
     max-width: 20rem;
     max-height: 13rem;
+    border-radius: 1rem;
 }
 
 .diagram {
@@ -207,7 +209,7 @@ a:active {
 
 /* need to make a wider container for components including images */
 
-/* ANIMATIONS: MOVE THIS TO DIFFERENT FILE LATER */
+/* ANIMATIONS */
 
 #star:hover {
     transform: rotate(360deg);
@@ -366,4 +368,8 @@ body.body-light a:hover,
 body.body-light a:focus,
 body.body-light a:active {
     color: #161740;
+}
+
+body.body-light .blue-text-box {
+    background-color: #EBEBF2;
 }
