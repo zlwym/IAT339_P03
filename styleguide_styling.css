@@ -116,6 +116,7 @@ a:active {
 .button-nav:focus,
 .button-nav:active {
     text-decoration: none;
+    border-radius: 12px;
     background-color: #4a4b8a;
 }
 
@@ -142,6 +143,7 @@ input[type=reset]:active{
   cursor: pointer;
   background-color: #EBEBF2;
   color: #161740;
+  border-radius: 12px;
 }
 
 /*
