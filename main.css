@@ -161,7 +161,7 @@ a:active {
     transition: transform 1.5s ease;
 }
 
-/* Project Page Styling */
+/* PROJECT PAGE STYLING */
 
 .context {
     display: flex;
@@ -218,15 +218,13 @@ a:active {
     flex: 1;
 }
 
-/* need to make a wider container for components including images */
-
 /* ANIMATIONS */
 
 #star:hover {
     transform: rotate(360deg);
 }
 
-/* CONTACT FORM STUFF: MOVE THIS TO DIFFERENT FILE LATER */
+/* CONTACT FORM STUFF */
 
 .input-field {
   color: #EBEBF2;
