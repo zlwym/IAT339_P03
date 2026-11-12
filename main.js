@@ -53,7 +53,8 @@ window.addEventListener("DOMContentLoaded", function() {
         
         document.getElementById("dark").checked = true;
     }
-})
+}) 
+
 
 // resources: https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
 // https://www.w3schools.com/jsref/prop_radio_checked.asp
